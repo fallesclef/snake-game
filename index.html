@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>嘴砲暴雪團 - 貪食蛇小遊戲</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>嘴砲暴雪團 - 貪食蛇小遊戲</h1>
+        <div id="game-container">
+            <canvas id="game-canvas" width="400" height="400"></canvas>
+            <div id="touch-controls" class="hidden">
+                <button data-direction="up">▲</button>
+                <div>
+                    <button data-direction="left">◀</button>
+                    <button data-direction="right">▶</button>
+                </div>
+                <button data-direction="down">▼</button>
+            </div>
+        </div>
+        <div id="input-container">
+            <label for="player-name">你的名字：</label>
+            <input type="text" id="player-name" placeholder="請輸入你的名字">
+            <button id="start-button">開始遊戲</button>
+        </div>
+        <div id="score-container">
+            <p>目前分數：<span id="current-score">0</span></p>
+            <div id="message-container" class="hidden">張清翔 有夠帥！！</div>
+        </div>
+        <div id="leaderboard-container" class="hidden">
+            <h2>排行榜</h2>
+            <ul id="leaderboard"></ul>
+            <button id="restart-button" class="hidden">重新開始</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
